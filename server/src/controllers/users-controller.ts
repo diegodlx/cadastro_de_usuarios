@@ -25,17 +25,13 @@ export const deleteUserByIdController = async (req: Request, res: Response): Pro
 }
 
 export const createNewUserController = async (req: Request, res: Response): Promise<void> => {
-    // console.log(req.body);
     const {id, name, age, job, register} = req.body;
-    // console.log(id, name, age, job, register);
     const response = await usersService.createNewUserService(id, name, age, job, register);
     res.status(response.status).json(response.data);
 }
 
 export const updateUserIdController = async (req: Request, res: Response): Promise<void> => {
-    // console.log(req.body);
     const {id, name, age, job, register} = req.body;
-    // console.log(id, name, age, job, register);
     const response = await usersService.updateUserIdService(id, name, age, job, register);
     res.status(response.status).json(response.data);
 }

@@ -4,6 +4,7 @@ const passwordLogin = document.getElementById("login-password");
 
 
 loginButton.addEventListener("click", () => {
+  /*THIS PART IS COMMENTED FOR A LATER USER LOGIN IMPLEMENTATION, FOR THE TIME BEING JUST CLICK ON "ENTRAR" TO LOGIN*/
   // if (userLogin.value == "diego" && passwordLogin.value == "123") {
   //   alert(`Olá ${userLogin.value}, seja bem vindo de volta!`);
   //    window.location.href = "index_copy.html";

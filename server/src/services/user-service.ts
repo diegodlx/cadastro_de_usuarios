@@ -42,7 +42,7 @@ export const createNewUserService = async (id: number, name: string, age: number
     return response
 };
 
-export const updateUserIdService = async (id: number, name: string, age: number, job: string, register: number) => {
+export const updateUserIdService = async (id: number, name: string, age: number, job: string, register: number): Promise<HttpResponse> => {
     const data = await usersRepository.updateUserIdRepository(id, name, age, job, register);
     data!==0? response.status = StatusCode.OK : response.status = StatusCode.BadRequest;
     response.data = undefined;

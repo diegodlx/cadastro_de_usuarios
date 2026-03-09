@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/users.css" />
+</head>
+<body>
+    <header>
+        <h1>CadSystem</h1>
+        <nav>
+            <a href="users.html">Consulta de Usuário</a>
+            <a href="edit_user.html">Editar de Usuário</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <h1>Cadastro de usuário</h1>
+    <label for="user_name">Nome do usuário</label>
+    <input type="text" name="user_name" id="user_name">
+    <label for="user_age">Idade do usuário</label>
+    <input type="text" name="user_age" id="user_age">
+    <label for="user_job">Função do usuário</label>
+    <input type="text" name="user_job" id="user_job">
+    <label for="user_register">Cadastro do usuário</label>
+    <input type="text" name="user_register" id="user_register">
+    <button type="button" id="register_btn" >Cadastrar</button>
+
+    <script type="module" src="../src/register_user.js"></script>
+</body>
+</html>

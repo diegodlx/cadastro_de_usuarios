@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/users.css" />
+</head>
+<body>
+    <header>
+        <h1>CadSystem</h1>
+        <nav>
+            <a href="register_user.html">Cadastro de Usuário</a>
+            <a href="users.html">Consulta de Usuário</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <h1>Edição de usuário</h1>
+    <div>
+        <label for="user-id">ID:</label>
+        <input type="text" name="user-id" id="user-id">
+        <label for="user-name">NAME:</label>
+        <input type="text" name="user-name" id="user-name">
+        <label for="user-age">AGE:</label>
+        <input type="text" name="user-age" id="user-age">
+        <label for="user-job">JOB:</label>
+        <input type="text" name="user-job" id="user-job">
+        <label for="user-register">REGISTER:</label>
+        <input type="text" name="user-register" id="user-register">
+        <button type="button" id="edit-user" >Editar</button>
+    </div>
+    <div id="existing-users"></div>
+
+    <script type="module" src="../src/edit_user.js"></script>
+</body>
+</html>
